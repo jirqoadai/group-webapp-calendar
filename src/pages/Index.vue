@@ -6,8 +6,9 @@
       </el-header>
       <el-container>
         <el-aside><Gaside></Gaside></el-aside>
-        <el-container>
+        <el-container class="g-content">
           <el-header><Gmenu></Gmenu></el-header>
+          <el-header class="g-week"><Gweek></Gweek></el-header>
           <el-main><Gmain></Gmain></el-main>
         </el-container>
       </el-container>
@@ -23,6 +24,7 @@ import Gheader from '../components/Gheader'
 import Gfooter from '../components/Gfooter'
 import Gaside from '../components/Gaside'
 import Gmenu from '../components/Gmenu'
+import Gweek from '../components/Gweek'
 import Gmain from '../components/Gmain'
 
 export default {
@@ -42,15 +44,22 @@ export default {
     Gfooter,
     Gaside,
     Gmenu,
+    Gweek,
     Gmain
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .g-week{
+    padding: 0;
+  }
   .g-page{
     position: relative;
     height: 100vh;
+  }
+  .g-content{
+    min-width: 960px;
   }
   .el-aside {
     border-right: 1px solid #eaeaea;

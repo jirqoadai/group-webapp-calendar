@@ -12,7 +12,7 @@
 export default {
   data () {
     return {
-      cards: ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']
+      cards: ['1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1']
     }
   },
   methods: {
@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   .g-cards{
     height: 100%;
     display: flex;
@@ -31,9 +31,19 @@ export default {
     align-items: center;
     justify-content: flex-end;
   }
+  .el-main {
+    padding: 0;
+  }
   .g-card {
-    height: calc((100vh - 120 -20) / 5);
+    border: 1px solid #eaeaea;
+    border-left: 0px;
+    border-bottom: 0px;
+    box-sizing: border-box;
+    min-height: calc((100vh - 240px) / 5);
     flex: 0 0 14.285714285%;
     text-align: center;
+    &:nth-of-type(7n) {
+
+    }
   }
 </style>
