@@ -21,4 +21,7 @@ export default {
 </script>
 
 <style>
+  .g-aside{
+    text-align: center;
+  }
 </style>
